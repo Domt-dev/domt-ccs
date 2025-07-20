@@ -1,3 +1,20 @@
+def identificar_bandeira(numero_cartao: str) -> str:
+    if numero_cartao.startswith('4'):
+        return 'Visa'
+    elif numero_cartao[:2] in [str(i) for i in range(51, 56)]:
+        return 'MasterCard'
+    elif numero_cartao[:2] in ['34', '37']:
+        return 'Amex'
+    elif numero_cartao.startswith('6011') or numero_cartao.startswith('65') or \
+         numero_cartao[:3] in [str(i) for i in range(644, 650)] or \
+         numero_cartao[:6] in [str(i) for i in range(622126, 622926)]:
+        return 'Discover'
+    elif numero_cartao[:2] == '35':
+        return 'JCB'
+    elif numero_cartao[:2] in ['36', '38']:
+        return 'Diners Club'
+    else:
+        return 'Desconhecida'
 import os
 import random
 import time
