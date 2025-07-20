@@ -1,3 +1,6 @@
+import os
+import random
+import time
 def identificar_bandeira(numero_cartao: str) -> str:
     if numero_cartao.startswith('4'):
         return 'Visa'
@@ -15,10 +18,6 @@ def identificar_bandeira(numero_cartao: str) -> str:
         return 'Diners Club'
     else:
         return 'Desconhecida'
-import os
-import random
-import time
-
 ARQUIVO_BINS = "bins.txt"
 ARQUIVO_GERADOS = "cartoes_gerados.txt"
 
