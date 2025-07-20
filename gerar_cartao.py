@@ -173,7 +173,8 @@ def gerar_cartoes(tipo):
         numero = gerar_cartao(bin_usado)
         mes, ano = gerar_validade()
         cvv = gerar_cvv(cvv_custom)
-        print(f"{numero}|{mes}|{ano}|{cvv}")
+        bandeira = identificar_bandeira(numero)
+print(f"{numero}|{mes}|{ano}|{cvv} ➜ {bandeira}")
 
     print("\n✔️ Geração finalizada.\n")
     input("Pressione ENTER para voltar ao menu...")
