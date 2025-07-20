@@ -175,9 +175,8 @@ def gerar_cartoes(tipo):
         cvv = gerar_cvv(cvv_custom)
         bandeira = identificar_bandeira(numero)
     print(f"{numero}|{mes}|{ano}|{cvv} ➜ {bandeira}")
-print("\n✔️ Geração finalizada.\n")
-input("Pressione ENTER para voltar ao menu...")
-
+    print("\n✔️ Geração finalizada.\n")
+    input("Pressione ENTER para voltar ao menu...")
 def main():
     while True:
         escolha = menu()
