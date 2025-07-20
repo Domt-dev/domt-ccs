@@ -176,7 +176,7 @@ def gerar_cartoes(tipo):
         bandeira = identificar_bandeira(numero)
     print(f"{numero}|{mes}|{ano}|{cvv} ➜ {bandeira}")
 print("\n✔️ Geração finalizada.\n")
-    input("Pressione ENTER para voltar ao menu...")
+input("Pressione ENTER para voltar ao menu...")
 
 def main():
     while True:
